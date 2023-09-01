@@ -1,3 +1,5 @@
+import { inicializarCarrinho } from "./src/menuCarrinho"
+
 const catalago = [
     {
         id: 1,
@@ -19,7 +21,7 @@ const catalago = [
         id: 3, 
         marca: 'Zara',
         nome: 'Jaqueta com Efeito Camurça',
-        preco: 60,
+        preco: 'R$ 60,00',
         nomeArquivoImagem: 'product-3.jpg',
         feminino: false 
     }, 
@@ -27,7 +29,7 @@ const catalago = [
         id: 4, 
         marca: 'Zara', 
         nome: 'Sobretudo em Mescla de Lã', 
-        preco: 160, 
+        preco: 'R$ 160,00', 
         nomeArquivoImagem: 'product-4.jpg',
         feminino: false 
     }, 
@@ -35,7 +37,7 @@ const catalago = [
         id: 5, 
         marca: 'Zara', 
         nome: 'Camisa Larga Acolchoada de Veludo Cotelê', 
-        preco: 110, 
+        preco: 'R$ 110,00', 
         nomeArquivoImagem: 'product-5.jpg', 
         feminino: false
     },
@@ -43,7 +45,7 @@ const catalago = [
         id: 6, 
         marca: 'Zara', 
         nome: 'Casaco de Lã com Botões', 
-        preco: 170, 
+        preco: 'R$ 170,00', 
         nomeArquivoImagem: 'product-6.jpg', 
         feminino: true
     }, 
@@ -51,7 +53,7 @@ const catalago = [
         id: 7, 
         marca: 'Zara', 
         nome: 'Casaco com Botões', 
-        preco: 75, 
+        preco: 'R$ 75,00', 
         nomeArquivoImagem: 'product-7.jpg', 
         feminino: true 
     }, 
@@ -59,7 +61,7 @@ const catalago = [
         id: 8, 
         marca: 'Zara', 
         nome: 'Colete Comprido com Cinto', 
-        preco: 88, 
+        preco: 'R$ 88,00', 
         nomeArquivoImagem: 'product-8.jpg', 
         feminino: true 
     }
@@ -77,6 +79,6 @@ for(const produtoCatalago of catalago){
 document.getElementById('container-produto').innerHTML += cartaoProduto
 } 
 
-
+inicializarCarrinho();
 
  
